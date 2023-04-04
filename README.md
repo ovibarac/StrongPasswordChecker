@@ -33,4 +33,5 @@ For example, the group of length 13 "aaaaaaaaaaaaa" can have a minimum of 13/3=4
 The sorting of the groups is achieved by using a min heap which stores a pair of (len%3, len), and if a character is removed from a group the group is either shortened or removed if it's length is less than 3.
 
 The number of changes required for each group is it's length/3 as stated earlier, so the total number of changes for groups is the sum of each length/3.
+
 The output is the maximum between the number of changes required by the character types condition and the groups condition + the number of removed characters if the length is greater than 20.
